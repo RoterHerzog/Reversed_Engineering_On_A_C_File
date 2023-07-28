@@ -11,7 +11,7 @@ Then you can double-click to the check_pass function. In that case, you should b
 
 ![Screenshot2](https://github.com/RoterHerzog/Reversed_Engineering_On_A_C_File/assets/82552351/e879b5c7-7301-46e3-819d-5dad3ebe7a6d)
 
-In that screenshot firstly, the password which has been used as a parameter to the check_pass function is copied to the rcx register for comparing. Then, 2126F6C6C6568h binary value is setting as rax register for comparing .Then real_password pointer is setting as rax and of course that represents us the value of real_password pointer is actually 2126F6C6C6568h. when we convert 216F6C6C6568 hexadecimal value into text, we will be getting !olleh which is the reflection of hello! (we are getting password reverse due to stack architecture) and that is what we were looking for.
+In that screenshot firstly, the password which has been used as a parameter to the check_pass function is copied to the rcx register for comparing. Then, 2126F6C6C6568h binary value is setting as rax register for comparing .Then the real_password pointer is set as rax and of course that represents us the value of the real_password pointer is actually 2126F6C6C6568h. when we convert 216F6C6C6568 hexadecimal value into text, we will be getting !olleh which is the reflection of hello! (we are getting password reverse due to stack architecture) and that is what we were looking for.
 
 
 ![Screenshot3](https://github.com/RoterHerzog/Reversed_Engineering_On_A_C_File/assets/82552351/727f2daa-0af1-4309-afb2-a25e3f0d80df)
